@@ -221,8 +221,7 @@
 	background-image: var(--gradiente-diagonal-2);
 	border-radius: 50px;
 	color: #fff;
-	width: 80vw;
-	max-width: 900px;
+	width: 50vw;
 }
 .explicacoes span {
 	font-size: 100px;
