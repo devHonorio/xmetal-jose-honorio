@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Montserrat;
+}
+
+:root {
+	--verde-escuro: #028375;
+	--verde-azulado: #01879b;
+	--verde-claro: #05b9b2;
+	--gradiente-diagonal: linear-gradient(
+		to bottom right,
+		var(--verde-claro),
+		var(--verde-azulado),
+		var(--verde-escuro)
+	);
+	--gradiente-diagonal-2: linear-gradient(
+		to bottom right,
+		var(--verde-claro),
+		var(--verde-azulado)
+	);
+	--gradiente-diagonal-2-invertida: linear-gradient(
+		to bottom right,
+		var(--verde-azulado),
+		var(--verde-claro)
+	);
+}
+
+.topo {
+	display: flex;
+	flex-direction: column;
+	height: 80vh;
+	background-image: url(../assets/header.png);
+	background-size: cover;
+	color: #fff;
+}
+
+.topo nav {
+	display: flex;
+	justify-content: space-around;
+	padding: 10px 0;
+}
+
+.topo nav a {
+	text-decoration: none;
+	padding: 8pt;
+	color: #fff;
+	font-weight: 500;
+}
+
+.topo h1 {
+	display: flex;
+	align-items: center;
+	font-size: 216px;
+	font-weight: bolder;
+	margin: auto 0;
+	margin-left: 15vw;
+}
+
+.topo h1 span {
+	font-size: 78px;
+}
+
+.quem-somos {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	padding: 0 10%;
+	margin: 4% auto;
+}
+
+.texto-quem-somos {
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+	max-width: 553px;
+}
+
+.texto-quem-somos h2 {
+	font-size: 40px;
+	padding-bottom: 41px;
+}
+
+.linha {
+	height: 4px;
+	background-image: var(--gradiente-diagonal);
+	border-radius: 30px;
+	margin-bottom: 118px;
+}
+
+.quadrados {
+	display: flex;
+	margin-bottom: 25px;
+}
+
+.quadrado {
+	width: 24px;
+	height: 24px;
+	margin-right: 24px;
+}
+.verde {
+	background-color: var(--verde-escuro);
+}
+.verde-azulado {
+	background-color: var(--verde-azulado);
+}
+.verde-claro {
+	background-color: var(--verde-claro);
+}
+
+.texto-quem-somos p {
+	font-size: 25px;
+	margin-bottom: 29px;
+	line-height: 45px;
+}
+
+.texto-quem-somos button {
+	height: 96px;
+	font-size: 30px;
+	border-radius: 50px;
+	border: none;
+	background-image: var(--gradiente-diagonal);
+	color: #fff;
+	font-weight: bold;
+}
+
+.quem-somos img {
+	width: 40%;
+}
+
+.objetivos {
+	display: flex;
+	align-items: center;
+	background-image: var(--gradiente-diagonal);
+	color: #fff;
+	justify-content: space-around;
+	padding: 0 5%;
+}
+.objetivos img {
+	width: 50%;
+	padding: 5% 0;
+}
+
+.texto-objetivos {
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+	max-width: 553px;
+	padding: 10% 5%;
+}
+.objetivos h1 {
+	font-size: 40px;
+	margin-bottom: 39px;
+}
+
+.linha-objetivos {
+	height: 4px;
+	background-color: #fff;
+	width: 70%;
+	margin-left: auto;
+	margin-bottom: 37px;
+	border-radius: 15px;
+}
+
+.texto-objetivos p {
+	font-size: 26px;
+	margin-bottom: 50px;
+	opacity: 0.8;
+	line-height: 45px;
+}
+.texto-objetivos button {
+	height: 96px;
+	font-weight: bold;
+	background-color: transparent;
+	border: solid 4px #fff;
+	border-radius: 50px;
+	color: #fff;
+	font-size: 30px;
+	cursor: pointer;
+}
+
+.pq-xmetal {
+	display: flex;
+	flex-direction: column;
+}
+.titulo {
+	display: flex;
+	align-items: center;
+	margin: 5% 10px;
+}
+.titulo h2 {
+	font-size: 50px;
+	width: 41%;
+	padding: 30px 0;
+}
+
+.titulo div {
+	background-color: var(--verde-claro);
+	height: 50px;
+	width: 6px;
+	border-radius: 15px;
+	margin: 0 25px;
+}
+
+.explicacoes {
+	display: flex;
+	margin: 3% 0;
+}
+
+.explicacoes .dois {
+	background-image: var(--gradiente-diagonal-2-invertida);
+}
+.direita {
+	margin-left: auto;
+	margin-right: 90px;
+}
+.cont-explicacoes {
+	padding: 3%;
+	background-image: var(--gradiente-diagonal-2);
+	border-radius: 50px;
+	color: #fff;
+	width: 80vw;
+	max-width: 900px;
+}
+.explicacoes span {
+	font-size: 100px;
+	font-weight: bold;
+	color: var(--verde-escuro);
+	margin: 0 90px;
+}
+
+.explicacoes h3 {
+	font-size: 40px;
+	font-weight: 700;
+	margin-bottom: 74px;
+}
+
+.explicacoes p {
+	font-size: 40px;
+}
+
+.retorno {
+	display: flex;
+	flex-direction: column;
+}
+
+.cont-retorno {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	margin-top: -60px;
+	margin-bottom: 50px;
+}
+.lista-retorno {
+	display: flex;
+	flex-direction: column;
+}
+.cont-retorno li {
+	font-size: 30px;
+	margin-bottom: 60px;
+	width: 40vw;
+}
+
+.cont-retorno button {
+	height: 96px;
+	font-size: 30px;
+	border-radius: 50px;
+	border: none;
+	background-image: var(--gradiente-diagonal);
+	color: #fff;
+	font-weight: bold;
+	width: 70%;
+}
+
+.cont-retorno img {
+	width: 40%;
+}
+
+footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--verde-azulado);
+	color: #fff;
+	padding: 50px;
+}
+footer h1 {
+	font-size: 50px;
+	display: flex;
+	align-items: center;
+}
+
+footer span {
+	font-size: 30px;
+}
+
+footer address {
+	display: flex;
+	justify-content: space-around;
+	width: 80%;
+	margin: 5% 0;
+	font-style: normal;
+}
+
+address h2 {
+	font-size: 30px;
+}
+
+address p {
+	font-size: 25px;
+}
+
+ion-icon {
+	font-size: 40px;
+	margin: 0 20px;
+}
