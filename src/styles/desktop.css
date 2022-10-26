@@ -10,6 +10,11 @@ html {
 	scroll-behavior: smooth;
 }
 
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
 :root {
 	--verde-escuro: #028375;
 	--verde-azulado: #01879b;
