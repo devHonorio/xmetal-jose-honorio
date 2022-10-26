@@ -6,6 +6,10 @@
 	font-family: Montserrat;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 :root {
 	--verde-escuro: #028375;
 	--verde-azulado: #01879b;
@@ -36,8 +40,12 @@
 	background-size: cover;
 	color: #fff;
 }
+.ionIco {
+	display: none;
+}
 
 .topo nav {
+	width: 100%;
 	display: flex;
 	justify-content: space-around;
 	padding: 10px 0;
@@ -48,6 +56,7 @@
 	padding: 8pt;
 	color: #fff;
 	font-weight: 500;
+	display: block;
 }
 
 .topo h1 {
@@ -79,7 +88,7 @@
 }
 
 .texto-quem-somos h2 {
-	font-size: 40px;
+	font-size: 30px;
 	padding-bottom: 41px;
 }
 
@@ -111,19 +120,21 @@
 }
 
 .texto-quem-somos p {
-	font-size: 25px;
+	font-size: 16px;
 	margin-bottom: 29px;
 	line-height: 45px;
 }
 
 .texto-quem-somos button {
-	height: 96px;
-	font-size: 30px;
+	height: 60px;
+	font-size: 20px;
 	border-radius: 50px;
 	border: none;
 	background-image: var(--gradiente-diagonal);
 	color: #fff;
 	font-weight: bold;
+	width: 60%;
+	margin: 0 auto;
 }
 
 .quem-somos img {
@@ -151,7 +162,7 @@
 	padding: 10% 5%;
 }
 .objetivos h1 {
-	font-size: 40px;
+	font-size: 30px;
 	margin-bottom: 39px;
 }
 
@@ -165,20 +176,22 @@
 }
 
 .texto-objetivos p {
-	font-size: 26px;
+	font-size: 16px;
 	margin-bottom: 50px;
 	opacity: 0.8;
 	line-height: 45px;
 }
 .texto-objetivos button {
-	height: 96px;
+	height: 60px;
 	font-weight: bold;
 	background-color: transparent;
 	border: solid 4px #fff;
 	border-radius: 50px;
 	color: #fff;
-	font-size: 30px;
+	font-size: 20px;
 	cursor: pointer;
+	width: 60%;
+	margin: 0 auto;
 }
 
 .pq-xmetal {
@@ -191,7 +204,7 @@
 	margin: 5% 10px;
 }
 .titulo h2 {
-	font-size: 50px;
+	font-size: 40px;
 	width: 41%;
 	padding: 30px 0;
 }
@@ -224,20 +237,20 @@
 	width: 50vw;
 }
 .explicacoes span {
-	font-size: 100px;
+	font-size: 50px;
 	font-weight: bold;
 	color: var(--verde-escuro);
-	margin: 0 90px;
+	margin: 0 60px;
 }
 
 .explicacoes h3 {
-	font-size: 40px;
+	font-size: 30px;
 	font-weight: 700;
-	margin-bottom: 74px;
+	margin-bottom: 60px;
 }
 
 .explicacoes p {
-	font-size: 40px;
+	font-size: 25px;
 }
 
 .retorno {
@@ -249,7 +262,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
-	margin-top: -60px;
+	margin-top: -5vw;
 	margin-bottom: 50px;
 }
 .lista-retorno {
@@ -257,20 +270,21 @@
 	flex-direction: column;
 }
 .cont-retorno li {
-	font-size: 30px;
+	font-size: 20px;
 	margin-bottom: 60px;
 	width: 40vw;
 }
 
 .cont-retorno button {
-	height: 96px;
-	font-size: 30px;
+	height: 60px;
+	width: 50%;
+	font-size: 20px;
 	border-radius: 50px;
 	border: none;
 	background-image: var(--gradiente-diagonal);
 	color: #fff;
 	font-weight: bold;
-	width: 70%;
+	margin: 0 auto;
 }
 
 .cont-retorno img {
@@ -305,14 +319,18 @@ footer address {
 }
 
 address h2 {
-	font-size: 30px;
+	font-size: 20px;
 }
 
 address p {
-	font-size: 25px;
+	font-size: 16px;
+}
+.social {
+	display: flex;
 }
 
 ion-icon {
 	font-size: 40px;
 	margin: 0 20px;
+	display: block;
 }

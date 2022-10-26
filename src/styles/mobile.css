@@ -1,0 +1,72 @@
+@media (max-width: 600px) {
+	.ion {
+		display: flex;
+		background-color: #fff;
+	}
+	.ionIco {
+		display: block;
+		color: #000;
+
+		padding: 5px;
+	}
+
+	.topo nav {
+		display: none;
+		background-color: #fff;
+		color: #000;
+		flex-direction: column;
+	}
+
+	.topo nav a {
+		color: #000;
+		margin: 0 auto;
+	}
+
+	.texto-quem-somos {
+		width: 100%;
+	}
+
+	.linha {
+		margin-bottom: 50px;
+	}
+	.quadrado {
+		width: 16px;
+		height: 16px;
+		margin-right: 16px;
+	}
+
+	.texto-quem-somos p {
+		line-height: 40px;
+	}
+
+	.texto-quem-somos button {
+		width: 100%;
+	}
+
+	.texto-objetivos p {
+		line-height: 40px;
+	}
+	.texto-objetivos button {
+		width: 100%;
+	}
+
+	.explicacoes span {
+		margin: 0 10px;
+	}
+	.cont-explicacoes {
+		padding: 30px;
+	}
+	.cont-retorno button {
+		width: 100%;
+	}
+
+	address {
+		flex-direction: column;
+	}
+	address div {
+		padding: 10px 0;
+	}
+	.social {
+		display: flex;
+	}
+}

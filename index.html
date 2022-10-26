@@ -6,10 +6,15 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>X-Metal</title>
 		<link rel="stylesheet" href="src/styles/desktop.css" />
+		<link rel="stylesheet" href="src/styles/tablet.css" />
+		<link rel="stylesheet" href="src/styles/mobile.css" />
 	</head>
-	<body>
+	<body onresize="resetarMenu()">
 		<header class="topo">
-			<nav>
+			<div class="ion">
+				<ion-icon class="ionIco" name="menu" onclick="exibirMenu()"></ion-icon>
+			</div>
+			<nav class="nav">
 				<a href="">Quem somos</a>
 				<a href="">Objetivo</a>
 				<a href="">Porque X-Metal</a>
@@ -147,4 +152,22 @@
 		nomodule
 		src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
 	></script>
+
+	<script>
+		function exibirMenu() {
+			if (document.querySelector('.nav').style.display == 'none') {
+				document.querySelector('.nav').style.display = 'flex'
+			} else {
+				document.querySelector('.nav').style.display = 'none'
+			}
+		}
+
+		function resetarMenu() {
+			if (window.innerWidth >= 601) {
+				document.querySelector('.nav').style.display = 'flex'
+			} else {
+				document.querySelector('.nav').style.display = 'none'
+			}
+		}
+	</script>
 </html>
